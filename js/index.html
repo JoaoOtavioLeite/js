@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galeria Persistente</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <h1>Galeria de Imagens (LocalStorage)</h1>
+
+    <section class="controls">
+      <input id="fileInput" type="file" accept="image/*" />
+      <button id="addBtn">Adicionar imagem</button>
+      <span id="info" class="info">0 imagens</span>
+    </section>
+
+    <section id="gallery" class="gallery" aria-live="polite"></section>
+
+    <footer class="notes">
+      <p>Dica: clique em uma imagem para removê-la. Limite máximo configurado: <span id="maxCount"></span>.</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
